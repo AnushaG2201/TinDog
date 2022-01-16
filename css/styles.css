@@ -1,27 +1,45 @@
-#title {
-    background-color: #ff4c68;
-    color: white;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-    line-height: 1.5;
-    margin-bottom: 40px;
-    font-weight: 700;
-    /*because in google fonts extra bold 700*/
+/*Section*/
+section,footer{
+    text-align: center;
+}
+
+.colored-section{
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section{
+    background-color: white;
 }
 
 .container-fluid {
     padding: 3% 15%;
 }
 
-#title .container-fluid{
+/*Title*/
+#title .container-fluid {
     padding: 3% 15% 8%;
+    text-align: left;
 }
+
+/*headings*/
+h1, h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 700;
+    /*because in google fonts extra bold 700*/
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/*Navigation bar*/
 
 .navbar-brand {
     font-size: 3rem;
@@ -35,15 +53,16 @@ h1 {
 .nav-link {
     margin-right: 20px;
     font-size: 1.5rem;
-    font-style: normal;
 }
 
+/*download button*/
 .download {
-    margin:3% 2%;
+    margin: 6% 20px 6% 0; /*Percentage will result in less for title download but more space for cta download.because space in title is less*/
     font-size: 1.5rem;
     font-weight: 400;
 }
 
+/*Iphone image*/
 .iphone {
     width: 20%;
     transform: rotate(25deg);
@@ -51,14 +70,15 @@ h1 {
     right: 23%;
 }
 
-@media  (max-width:1028px) {
-    .iphone{
+@media (max-width: 1028px) {
+    .iphone {
         position: static;
         transform: rotate(0);
         width: 40%;
         padding-top: 2%;
     }
-    #title{
+
+    #title {
         text-align: center;
     }
 }
@@ -75,39 +95,24 @@ h1 {
 
 .feature {
     padding: 5%;
-    text-align: center;
 }
 
-.icon {
+.feature p {
+    color: #8f8f8f;
+}
+
+.feature-icon {
     color: #ef8172;
     margin-bottom: 1rem;
 }
 
-h3 {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.col-lg-4 p {
-    color: #8f8f8f;
-}
-
-.icon:hover {
+.feature-icon:hover {
     color: #ff4c68;
-
 }
 
 /*Testimonials*/
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
-    color: white;
-}
-
-h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -116,14 +121,13 @@ h2 {
     margin: 10px;
 }
 
-em {
+.testimonial-name {
     font-weight: bold;
 }
 
 /*Press*/
 #press {
     background-color: #ef8172;
-    text-align: center;
 }
 
 .press-image {
@@ -134,17 +138,14 @@ em {
 /*Price*/
 
 #pricing {
-    text-align: center;
     padding: 5% 0;
 }
 
 /*Call to Action*/
-#cta{
-    background-color: #ff4c68;
-    color: white;
-    text-align: center;
+#cta {
     padding: 3% 0;
 }
+
 #cta h3{
     font-family: 'Montserrat-Black', sans-serif;
     font-size: 3.5rem;
@@ -152,13 +153,11 @@ em {
 
 /*Footer*/
 
-#footer{
-    background-color: white;
-    text-align: center;
+#footer {
     padding-top: 5%;
 }
 
-.contact{
+.contact {
     margin-right: 2%;
     margin-bottom: 2%;
 }
