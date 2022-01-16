@@ -38,6 +38,10 @@ h3 {
     font-weight: 700;
     font-size: 2rem;
 }
+/*Paragraph*/
+p {
+    color: #8f8f8f;
+}
 
 /*Navigation bar*/
 
@@ -97,10 +101,6 @@ h3 {
     padding: 5%;
 }
 
-.feature p {
-    color: #8f8f8f;
-}
-
 .feature-icon {
     color: #ef8172;
     margin-bottom: 1rem;
@@ -139,6 +139,10 @@ h3 {
 
 #pricing {
     padding: 5% 0;
+}
+
+.card{
+    min-height: 450px;
 }
 
 /*Call to Action*/
