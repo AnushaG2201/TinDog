@@ -61,7 +61,7 @@ p {
 
 /*download button*/
 .download {
-    margin: 6% 20px 6% 0; /*Percentage will result in less for title download but more space for cta download.because space in title is less*/
+    margin: 10px 20px 10px 0; /*Percentage will result in less for title download but more space for cta download.because space in title is less*/
     font-size: 1.5rem;
     font-weight: 400;
 }
@@ -80,9 +80,11 @@ p {
         transform: rotate(0);
         width: 40%;
         padding-top: 2%;
+        right: 0;
+        margin-left: 100px;
     }
 
-    #title {
+    #title.container-fluid {
         text-align: center;
     }
 }
